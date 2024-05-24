@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Login page</title>
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="login__inner">
+        <h3 class="login__title-logo">Your logo</h3>
+        <h1 class="login__title">Login</h1>
+
+        <form method="POST" class="js-form form">
+          <div class="email">
+            <label for="email-input">Email</label>
+            <input
+              type="email"
+              placeholder="username@gmail.com"
+              aria-label="enter you email..."
+              class="email-input"
+              id="email-input"
+              value="eve.holt@reqres.in"
+              required
+            />
+          </div>
+          <div class="password">
+            <label for="password-input">Password</label>
+            <div class="password__inner">
+              <input
+                type="password"
+                placeholder="Password"
+                aria-label="enter you password..."
+                class="password-input"
+                id="password-input"
+                value="cityslicka"
+                required
+              />
+
+              <button class="show-password" type="button"></button>
+            </div>
+
+            <small
+              ><a href="index.html" class="forgot-password"
+                >Forgot password</a
+              ></small
+            >
+
+            <button type="submit" class="submit-btn">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

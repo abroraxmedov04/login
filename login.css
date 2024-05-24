@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/poppins.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #a5d8ff;
+  font-family: "Poppins";
+}
+
+.login {
+  background-image: url("./images/bg-blue.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__inner {
+  max-width: 690px;
+  width: 100%;
+  padding-block: 48px;
+  padding-inline: 94px;
+  border-radius: 40px;
+  border: 3px solid rgba(88, 130, 193, 0.49);
+  background: rgba(88, 130, 193, 0.28);
+  backdrop-filter: blur(12.5px);
+}
+
+.login__title-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.login__title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.email label {
+  color: #fff;
+  font-size: 18px;
+}
+
+.email input {
+  padding-block: 17px;
+  padding-inline: 23px;
+  border-radius: 10px;
+  border: 1px solid #bcbec0;
+  background: #fff;
+  outline: none;
+}
+
+.email input::placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+}
+
+.password {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.password label {
+  color: #fff;
+  font-size: 18px;
+}
+
+.password input {
+  width: 100%;
+  padding-block: 17px;
+  padding-inline: 23px;
+  border-radius: 10px;
+  border: 1px solid #bcbec0;
+  background: #fff;
+  outline: none;
+}
+
+.password input::placeholder {
+  color: #bcbec0;
+  font-size: 14px;
+}
+
+.password__inner {
+  position: relative;
+}
+
+.show-password {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./images/show-hide.svg");
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  background-color: transparent;
+  border: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.forgot-password {
+  margin-bottom: 17px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.submit-btn {
+  margin-top: 42px;
+  border-radius: 10px;
+  background: #003465;
+  border: transparent;
+  padding-block: 13px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header {
+  background-color: #fff;
+  padding-block: 15px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
